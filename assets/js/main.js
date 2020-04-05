@@ -68,7 +68,7 @@ jQuery(document).ready(function($) {
     
     
     /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
-    GitHubActivity.feed({ username: "musyokamuasya", selector: "#ghfeed" });
+    GitHubActivity.feed({ username: "musyokamuasya", repository: "https://www.github.com/musyokamuasya", selector: "#ghfeed" , limit: 20});
 
 
 });
