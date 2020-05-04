@@ -130,8 +130,8 @@ a.dotted-link:hover {
 .header .profile-image {
   margin-right: 30px;
   position: relative;
-  width: 100px;     
-  height: 100px;
+  width: 180px;     
+  height: 180px;
   border-radius: 50%;
   overflow: hidden
 }
