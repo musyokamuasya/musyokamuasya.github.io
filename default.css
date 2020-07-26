@@ -8,11 +8,10 @@
 
 html,
 body {
-    padding: 0rem;
-    margin: 0rem;
+    padding: 0;
+    margin: 0;
 }
 
-;
 h1,
 h2,
 h3,
@@ -22,9 +21,36 @@ h6,
 strong {
     /* Ensure they have the same properties */
     color: var(--mainText);
+    font-family: 'Ubuntu', sans-serif;
 }
 
-;
+
+/* Font sizes */
+
+h1 {
+    font-size: 56px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
 p,
 li,
 span,
@@ -33,16 +59,17 @@ input,
 textarea {
     /* Ensure the colors are easier to note */
     color: var(--secondaryText);
+    font-family: 'Roboto', sans-serif;
 }
 
 .s1 {
-    color: var(--mainColor);
+    background-color: var(--mainColor);
     border-bottom: 1px solid var(--borderColor);
     overflow: auto;
 }
 
 .s2 {
-    color: var(--secondaryColor);
+    background-color: var(--secondaryColor);
     border-bottom: 1px solid var(--borderColor);
     overflow: auto;
 }
@@ -50,6 +77,29 @@ textarea {
 .main-container {
     width: 1200px;
     margin: 0 auto;
+}
+
+
+/* Remove underline from tags and give them light blue color  */
+
+a {
+    text-decoration: none;
+    color: #17a2b8;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* The footer */
+
+.footer {
+    position: relative;
+}
+
+#copy-text {
+    text-align: center;
 }
 
 
