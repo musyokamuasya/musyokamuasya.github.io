@@ -4,6 +4,8 @@
     --mainText: black;
     --secondaryText: #4b5156;
     --borderColor: #c1c1c1;
+    /* Theme dot border, to be changed dynamically */
+    --themeDotBorder: #24292e;
 }
 
 html,
@@ -77,6 +79,150 @@ textarea {
 .main-container {
     width: 1200px;
     margin: 0 auto;
+}
+
+.greeting-text {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    min-height: 10px;
+}
+
+.intro-wrapper {
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--borderColor);
+    border-radius: 5px 5px 0 0;
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    /* Grid Templates */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3em 30em;
+    grid-template-areas: 'nav-wrapper nav-wrapper' 'left-column right-column';
+}
+
+.nav-wrapper {
+    border-radius: 5px 5px 0 0;
+    grid-area: nav-wrapper;
+    border-bottom: 1px solid var(--borderColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mainColor);
+}
+
+#navigation {
+    margin: 0;
+    padding: 10px;
+}
+
+#navigation li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+/* The dots */
+
+.dots {
+    display: flex;
+    padding: 10px;
+}
+
+.mac-dots {
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 5px;
+    /* Shadow */
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+
+
+/* Individual dots */
+
+#dot-1 {
+    background-color: #FC6058;
+}
+
+#dot-2 {
+    background-color: #FEC02F;
+}
+
+#dot-3 {
+    background-color: #2ACA3E;
+}
+
+.left-column {
+    grid-area: left-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.right-column {
+    grid-area: right-column;
+}
+
+
+/* Left column */
+
+
+/* Profile Pic */
+
+#profile-pic {
+    display: block;
+    margin: 0 auto;
+    width: 265px;
+    height: 280px;
+    object-fit: cover;
+    border: 2px solid var (var(--borderColor));
+}
+
+
+/* The dots */
+
+#theme-options {
+    display: flex;
+    justify-content: center;
+}
+
+.theme-dots {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 5px;
+    /* Shadow */
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    border: 2px solid var(--themeDotBorder);
+}
+
+.theme-dots:hover {
+    border-width: 5px;
+}
+
+#light-mode {
+    background-color: #fff;
+}
+
+#blue-mode {
+    background-color: #192734;
+}
+
+#green-mode {
+    background-color: #78866b;
+}
+
+#purple-mode {
+    background-color: #7E4C74;
 }
 
 
