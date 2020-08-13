@@ -304,6 +304,22 @@ ul {
 }
 
 
+/* About Section */
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#skills {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--previewShadow);
+}
+
+
 /* Make it responsive on small screens */
 
 @media screen and (max-width: 1200px) {
