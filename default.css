@@ -360,6 +360,17 @@ ul {
 }
 
 
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--previewShadow);
+    padding-bottom: 60px;
+    padding: 20px;
+}
+
+
 /* Make it responsive on small screens */
 
 @media screen and (max-width: 1200px) {
